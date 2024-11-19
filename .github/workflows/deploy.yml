@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      working-directory: /home/runner/work/did-issuer-server/did-issuer-server/docs
+      working-directory: ./docs
 
     steps:
       - name: Checkout code
@@ -24,7 +24,6 @@ jobs:
 
       - name: Build site
         run: npm run build
-        working-directory: ${{ env.working-directory }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
