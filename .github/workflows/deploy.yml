@@ -17,12 +17,12 @@ jobs:
           node-version: 18 # Use Node.js 18 here
 
       - name: Install dependencies
-        run:
+        run: |
           cd ./docs
           npm install
 
       - name: Build site
-        run:
+        run: |
           cd ./docs
           npm run build
 
