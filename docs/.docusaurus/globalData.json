@@ -42,8 +42,8 @@
           }
         },
         {
-          "name": "1.000",
-          "label": "1.000",
+          "name": "1.00",
+          "label": "1.00",
           "isLast": true,
           "path": "/did-issuer-server/docs",
           "mainDocId": "did-issuer-server/api/Issuer_API_ko",

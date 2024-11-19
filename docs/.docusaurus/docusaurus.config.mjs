@@ -39,7 +39,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/suhyun-forten-lee/did-issuer/server/edit/main/"
+          "editUrl": "https://github.com/suhyun-forten-lee/did-issuer-server/edit/main/docs/"
         },
         "blog": {
           "showReadingTime": true,
@@ -50,7 +50,7 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/suhyun-forten-lee/did-issuer/server/edit/main/",
+          "editUrl": "https://github.com/suhyun-forten-lee/did-issuer-server/edit/main/docs/",
           "onInlineTags": "warn",
           "onInlineAuthors": "warn",
           "onUntruncatedBlogPosts": "warn"
@@ -64,7 +64,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpeg",
     "navbar": {
-      "title": "OmniOne Open DID",
+      "title": "OmniOne did-issuer-server",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/omnione.jpeg"
@@ -83,10 +83,20 @@ export default {
           "dropdownItemsAfter": []
         },
         {
+          "to": "http://suhyun-forten-lee.github.io/did-doc-architecture",
+          "label": "architecture",
+          "position": "left"
+        },
+        {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Docs"
+          "label": "issuer"
+        },
+        {
+          "to": "http://suhyun-forten-lee.github.io/did-verifier-server",
+          "label": "verifier",
+          "position": "left"
         },
         {
           "href": "https://github.com/OmniOneID",

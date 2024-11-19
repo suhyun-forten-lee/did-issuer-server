@@ -92,10 +92,20 @@ const config = {
             type: 'localeDropdown',
           },
           {
+            to: 'https://suhyun-forten-lee.github.io/did-doc-architecture/docs/did-doc-architecture/architecture/Software%20Architecture_ko',
+            label: 'architecture',
+            position: 'left',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Docs',
+            label: 'issuer',
+          },
+          {
+            to: 'https://suhyun-forten-lee.github.io/did-verifier-server/docs/did-verifier-server/api/Verifier_API_ko',
+            label: 'verifier',
+            position: 'left',
           },
           {
             href: 'https://github.com/OmniOneID',

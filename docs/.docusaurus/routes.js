@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/did-issuer-server/__docusaurus/debug',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug', '38b'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/config',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/config', '36f'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/content',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/content', '13a'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/globalData',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/globalData', '5e0'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/metadata',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/metadata', '923'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/registry',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/registry', '885'),
+    exact: true
+  },
+  {
+    path: '/did-issuer-server/__docusaurus/debug/routes',
+    component: ComponentCreator('/did-issuer-server/__docusaurus/debug/routes', 'e29'),
+    exact: true
+  },
+  {
     path: '/did-issuer-server/blog',
     component: ComponentCreator('/did-issuer-server/blog', 'b9d'),
     exact: true
@@ -79,7 +114,7 @@ export default [
   },
   {
     path: '/did-issuer-server/docs',
-    component: ComponentCreator('/did-issuer-server/docs', '972'),
+    component: ComponentCreator('/did-issuer-server/docs', 'c0c'),
     routes: [
       {
         path: '/did-issuer-server/docs/next',
@@ -119,33 +154,33 @@ export default [
       },
       {
         path: '/did-issuer-server/docs',
-        component: ComponentCreator('/did-issuer-server/docs', '33c'),
+        component: ComponentCreator('/did-issuer-server/docs', 'a29'),
         routes: [
           {
             path: '/did-issuer-server/docs',
-            component: ComponentCreator('/did-issuer-server/docs', 'bcd'),
+            component: ComponentCreator('/did-issuer-server/docs', '133'),
             routes: [
               {
                 path: '/did-issuer-server/docs/did-issuer-server/api/Issuer_API_ko',
-                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/api/Issuer_API_ko', 'daf'),
+                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/api/Issuer_API_ko', 'ea5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/did-issuer-server/docs/did-issuer-server/db/OpenDID_TableDefinition_Issuer',
-                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/db/OpenDID_TableDefinition_Issuer', '5f3'),
+                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/db/OpenDID_TableDefinition_Issuer', 'f8f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/did-issuer-server/docs/did-issuer-server/errorCode/Issuer_ErrorCode',
-                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/errorCode/Issuer_ErrorCode', '4dd'),
+                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/errorCode/Issuer_ErrorCode', '5e4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/did-issuer-server/docs/did-issuer-server/installation/OpenDID_IssuerServer_InstallationAndOperation_Guide_ko',
-                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/installation/OpenDID_IssuerServer_InstallationAndOperation_Guide_ko', '94a'),
+                component: ComponentCreator('/did-issuer-server/docs/did-issuer-server/installation/OpenDID_IssuerServer_InstallationAndOperation_Guide_ko', '454'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
