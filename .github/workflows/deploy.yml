@@ -6,6 +6,8 @@ on
 jobs
   deploy
     runs-on ubuntu-latest
+    env
+      working-directory: ./docs
 
     steps
       - name Checkout code
@@ -18,9 +20,11 @@ jobs
 
       - name Install dependencies
         run npm install
+        working-directory ${{ env.working-directory }}
 
       - name Build site
         run npm run build
+        working-directory ${{ env.working-directory }}
 
       - name Deploy to GitHub Pages
         uses peaceirisactions-gh-pages@v3
