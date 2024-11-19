@@ -24,7 +24,8 @@ jobs:
       - name: Build site
         run: |
           cd ./docs
-          chmod -R 777 ./*
+          pwd
+          chmod -R 777 *
           sudo npm run build
 
       - name: Deploy to GitHub Pages
