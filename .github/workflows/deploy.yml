@@ -18,10 +18,6 @@ jobs:
           pwd
 
       - name: Setup Node.js
-        run: |
-          sudo chmod -R 777 docs
-          cd ./docs
-          pwd
         uses: actions/setup-node@v2
         with:
           node-version: 18 # Use Node.js 18 here
