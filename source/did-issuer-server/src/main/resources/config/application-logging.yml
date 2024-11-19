@@ -1,6 +1,0 @@
-logging:
-  level:
-    org.omnione: debug
-
-  file:
-    name: ./logs/server.log
