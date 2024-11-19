@@ -6,11 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./docs
-    defaults:
-      run:
-        working-directory: ${{ env.working-directory }}
 
     steps:
       - name: Checkout code
@@ -22,13 +17,14 @@ jobs:
           node-version: 18 # Use Node.js 18 here
 
       - name: Install dependencies
-        run: npm install
-
-      - name: chmod
-        run: sudo chmod +x node_modules/.bin/docusaurus
+        run:
+          cd ./docs
+          npm install
 
       - name: Build site
-        run: npm run build
+        run:
+          cd ./docs
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
