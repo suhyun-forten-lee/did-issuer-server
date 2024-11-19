@@ -18,6 +18,7 @@ jobs:
 
       - name: Install dependencies and Build site
         run: |
+          chmod -R 777 docs
           cd ./docs
           pwd
           sudo npm install
