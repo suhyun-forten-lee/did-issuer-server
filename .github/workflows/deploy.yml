@@ -16,16 +16,11 @@ jobs:
         with:
           node-version: 18 # Use Node.js 18 here
 
-      - name: Install dependencies
-        run: |
-          cd ./docs
-          sudo npm install
-
-      - name: Build site
+      - name: Install dependencies and Build site
         run: |
           cd ./docs
           pwd
-          chmod -R 777 *
+          sudo npm install
           sudo npm run build
 
       - name: Deploy to GitHub Pages
