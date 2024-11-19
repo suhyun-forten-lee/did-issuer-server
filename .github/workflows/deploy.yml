@@ -22,6 +22,7 @@ jobs:
           cd ./docs
           pwd
           sudo npm install
+          sudo npm cache clean --force
           sudo npm run build
 
       - name: Deploy to GitHub Pages
