@@ -18,9 +18,7 @@ jobs:
 
       - name: Install dependencies and Build site
         run: |
-          sudo chmod -R 777 docs
           cd ./docs
-          pwd
           sudo rm -rf node_modules
           sudo rm -f package-lock.json
           sudo npm cache verify
@@ -31,4 +29,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Change this if your build output directory is different
+          publish_dir: ./docs/build # Change this if your build output directory is different
