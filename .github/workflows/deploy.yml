@@ -21,8 +21,10 @@ jobs:
           sudo chmod -R 777 docs
           cd ./docs
           pwd
+          sudo rm -rf node_modules
+          sudo rm -f package-lock.json
+          sudo npm cache verify
           sudo npm install
-          sudo npm cache clean --force
           sudo npm run build
 
       - name: Deploy to GitHub Pages
